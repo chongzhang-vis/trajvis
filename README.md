@@ -5,7 +5,7 @@ Chong Zhang
 Trajectory Data Visualization
 
 // 3/11/2015
-May have delay because of the way of GeoJSON reading and rendering in OpenLayers and broswer.
+May delay because of the way of GeoJSON reading and rendering in OpenLayers and broswer.
 
 1. Change color definition as Xiaoke suggested.
 2. Separate control panel from map view
@@ -13,7 +13,7 @@ May have delay because of the way of GeoJSON reading and rendering in OpenLayers
 
 
 // 3/10/2015
-Basically, the more you use it the faster.
+Basically, the more you use the faster it become.
 
 ////////////////////////////
 ////    Interaction     ////
