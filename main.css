@@ -1,0 +1,30 @@
+html, body, #basicMap {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+}
+#map {
+   width: 100%;
+   height: 100%;
+   border: 0px solid black;
+}
+.olPopup p { margin:0px; font-size: .9em;}
+.olPopup h2 { font-size:1.2em; }
+
+/* by Chong */
+.graph {
+		fill: None;		
+	}
+	
+.graph .route .rosearcs path {
+	stroke: #DCDADA;	
+	stroke-width: 1px
+}
+.route, .node {
+  cursor: pointer;
+}
+
+.olControlLayerSwitcher .layersDiv{
+  background-color: rgba(119, 152, 190, 0.7) !important;   
+}
+  
