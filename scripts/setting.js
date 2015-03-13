@@ -32,7 +32,7 @@ var roseSettings = {
 	  displayZoom: 12
 	, svgwidth: 150
 	, svgheight: 150
-	, innersize: 5
+	, innersize: 10
 	, rosesize: 30
 	, labelpad: 5
 }

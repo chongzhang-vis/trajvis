@@ -1,17 +1,54 @@
-html, body, #basicMap {
+html, body {
    width: 100%;
    height: 100%;
    margin: 0;
 }
-#map {
-   width: 100%;
-   height: 100%;
-   border: 0px solid black;
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.olPopup p { margin:0px; font-size: .9em;}
-.olPopup h2 { font-size:1.2em; }
 
-/* by Chong */
+
+.left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;    
+    width: 40%;
+}
+
+.topLeft {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70%; 
+    width: 100%;      
+}
+
+.buttomLeft {
+    position: absolute;
+    top: 70%;
+    left: 0px;
+    bottom: 0px;
+    height: 30%;  
+    width: 100%;      
+}
+
+.content {
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    width: 60%;
+    right: 0px;
+    bottom: 0px;        
+}
+
+.label rect {
+    stroke: #CB7676;
+    stroke-width: 1;
+    fill: none;
+}
 .graph {
 		fill: None;		
 	}
@@ -20,8 +57,18 @@ html, body, #basicMap {
 	stroke: #DCDADA;	
 	stroke-width: 1px
 }
-.route, .node {
+.label .node, .label text{
   cursor: pointer;
+}
+.label .nodeoutline {
+    fill: black;
+    stroke: black;
+    display: none;
+}
+.node_line {
+    stroke: #999;
+    stroke-width: 1px;
+    opacity: 0.5;
 }
 
 .olControlLayerSwitcher .layersDiv{

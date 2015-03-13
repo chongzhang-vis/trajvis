@@ -1,40 +1,46 @@
 <!DOCTYPE HTML>
 <html>
-   <head> 
-  <title>Trajactory Data Visualization</title>
-  <meta charset="UTF-8">
-  <link href="main.css" rel="stylesheet" type="text/css">
-  <link href="jquery-ui-1.10.3.sm.css" rel="stylesheet" type="text/css">
+  <head> 
+    <title>Trajactory Data Visualization</title>
+    <meta charset="UTF-8">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.10.3.sm.css" rel="stylesheet" type="text/css">
 
-  <script src="http://www.openlayers.org/api/OpenLayers.js" ></script>  
-  <script src="scripts/jquery-1.10.2.min.js"></script>
-  <script src="scripts/jquery-ui-1.10.3.custom.min.js"></script>  
-  <script src="scripts/d3.min.js"></script>
-  <script src="data/FeatureCollection_ForChong.js"></script>
-  <script src="data/partitionGraphAndDetail_ForChong.js"></script>
-  <script src="scripts/rosegraph-1d.js"></script>
-  <script src="scripts/setting.js"></script>
-  <script src="scripts/overlay.js"></script>
-  <script src="scripts/map.js"></script>
-    
+    <script src="http://www.openlayers.org/api/OpenLayers.js" ></script>  
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/jquery-ui-1.10.3.custom.min.js"></script>  
+    <script src="scripts/d3.min.js"></script>
+    <script src="data/FeatureCollection_ForChong.js"></script>
+    <script src="data/partitionGraphAndDetail_ForChong.js"></script>
+    <script src="scripts/rosegraph-1d.js"></script>
+    <script src="scripts/setting.js"></script>
+    <script src="scripts/overlay.js"></script>
+    <script src="scripts/map.js"></script> 
 
-   </head>
-   <body onload="init();">
-   <div style="position: relative; width: 100%; height: 100%;">
-     <div id = "ctrlPane" style="position: absolute; z-index: 1000; width: 1000px; left: 597px; top: 10px; padding: 0.5em;">
-      <div id = "ctrlWin" style="float: left; cursor: pointer">&and;</div>
-      <div style="display: inline; float: right; "> <input type = "submit" id = "resetbtn" value = "Reset Map"></div>
-      <div id="graphpart" style="text-align: center;" class="ui-widget-header ui-corner-all";>
-        <input type="radio" id="pagerank" name="radio" checked="checked"><label for="pagerank">PageRank</label>
-        <input type="radio" id="betweenness" name="radio" ><label for="betweenness">Betweeness</label>
-        <input type="radio" id="closeness" name="radio" ><label for="closeness">Closeness</label>
-        <input type="radio" id="degree" name="radio" ><label for="degree">Degree</label>
+  </head>
+  <body onload="init();">
+    <div class="container">    
+      <div class="left">
+        <div class='topLeft'>
+          <div id = "ctrlPane" style="width: 100%; padding: 1px;">
+            <!-- <div id = "ctrlWin" style="float: left; cursor: pointer">&and;</div> -->
+            <div style="float: left; padding-top: 3px;"><input type="checkbox" id="mulsel" value="multiselect" checked > <label style="
+            cursor: pointer"; for='mulsel'>Multi-select</label></div>
+            <div style="display: inline; float: right; padding: 1px;">
+              <input type = "submit" id = "resetbtn" value = "Reset Map">
+            </div>
+            <div id="graphpart" style="text-align: center;" class="ui-widget-header ui-corner-all";>
+              <input type="radio" id="pagerank" name="radio" checked="checked"><label for="pagerank">PageRank</label>
+              <input type="radio" id="betweenness" name="radio" ><label for="betweenness">Betweeness</label>
+              <input type="radio" id="closeness" name="radio" ><label for="closeness">Closeness</label>
+              <input type="radio" id="degree" name="radio" ><label for="degree">Degree</label>
+            </div>
+            <div id = "graphvisdiv" style="border: 1px solid rgb(128, 158, 196); border-top: 0px;"></div>
+          </div>
+        </div>
+        <div class='buttomLeft'>Line vis goes here</div>
       </div>
-      <div id = "graphvisdiv" style="border: 1px solid rgb(128, 158, 196)"></div>
-    </div>
-    <div id="basicMap"></div>
-    <p id="details"></p>
-   
-    </div>
+      <div id="basicMap" class="content"></div>
+    </div> 
    </body>
 </html>

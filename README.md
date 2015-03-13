@@ -4,6 +4,22 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+// 3/13/2015
+minor edits:
+1. Add selection toggle on the node-link graph
+2. Add label disply onto RoseChart
+3. Remove zooming out of the node-link graph
+
+
+// 3/13/2015
+
+1. Align control panel and map view side by side.
+2. Change circle to rect in the node-link graph and adjust label position according to its width
+3. Add zooming to the node-link graph
+4. Add mouseover interaction onto the node-link graph, which provides a way to look at the link direction
+5. Add Multi-select function to the node-link graph.
+6. Modify map filtering
+
 // 3/11/2015
 May delay because of the way of GeoJSON reading and rendering in OpenLayers and broswer.
 
