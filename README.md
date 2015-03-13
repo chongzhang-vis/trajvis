@@ -5,6 +5,7 @@ Chong Zhang
 Trajectory Data Visualization
 
 // 3/13/2015
+
 minor edits:
 1. Add selection toggle on the node-link graph
 2. Add label disply onto RoseChart
@@ -21,6 +22,7 @@ minor edits:
 6. Modify map filtering
 
 // 3/11/2015
+
 May delay because of the way of GeoJSON reading and rendering in OpenLayers and broswer.
 
 1. Change color definition as Xiaoke suggested.
@@ -29,18 +31,18 @@ May delay because of the way of GeoJSON reading and rendering in OpenLayers and 
 
 
 // 3/10/2015
+
 Basically, the more you use the faster it become.
 
 ////////////////////////////
 ////    Interaction     ////
 ////////////////////////////
+
 1. Mouse wheel to zoom map
 3. Click dot on the map to filter routes and Rosechart
 4. Click top right button to go back the original map 
 5. Click top buttons to change the color setting for routes and Rosechart
  
-
-
 
 ////////////////////////////
 ////    Customermize    ////
