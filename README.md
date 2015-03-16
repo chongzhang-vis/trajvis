@@ -4,6 +4,10 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+// 3/16/2015
+Separate Rosechart stroke seeting from definition and configure it in setting.js
+
+
 // 3/13/2015
 
 minor edits:
