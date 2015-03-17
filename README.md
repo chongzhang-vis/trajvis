@@ -4,13 +4,17 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+// 3/17/2015
+
+1. Add a muli-line graph for time series
+
+
 // 3/13/2015
 
 minor edits:
 1. Add selection toggle on the node-link graph
 2. Add label disply onto RoseChart
 3. Remove zooming out of the node-link graph
-4. Modify stroke color of RoseChart
 
 
 // 3/13/2015

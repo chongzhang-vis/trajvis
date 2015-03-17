@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/jquery-ui-1.10.3.sm.css" rel="stylesheet" type="text/css">
+    <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
 
     <script src="http://www.openlayers.org/api/OpenLayers.js" ></script>  
     <script src="scripts/jquery-1.10.2.min.js"></script>
@@ -12,9 +13,11 @@
     <script src="scripts/d3.min.js"></script>
     <script src="data/FeatureCollection_ForChong.js"></script>
     <script src="data/partitionGraphAndDetail_ForChong.js"></script>
+    <script src="scripts/nv.d3.js"></script>
     <script src="scripts/rosegraph-1d.js"></script>
     <script src="scripts/setting.js"></script>
     <script src="scripts/overlay.js"></script>
+    <script src="scripts/line.js"></script>
     <script src="scripts/map.js"></script> 
 
   </head>
@@ -22,7 +25,7 @@
     <div class="container">    
       <div class="left">
         <div class='topLeft'>
-          <div id = "ctrlPane" style="width: 100%; padding: 1px;">
+          <div id = "ctrlPane" style="width: 100%; "> <!--padding: 1px;-->
             <!-- <div id = "ctrlWin" style="float: left; cursor: pointer">&and;</div> -->
             <div style="float: left; padding-top: 3px;"><input type="checkbox" id="mulsel" value="multiselect" checked > <label style="
             cursor: pointer"; for='mulsel'>Multi-select</label></div>
@@ -30,17 +33,30 @@
               <input type = "submit" id = "resetbtn" value = "Reset Map">
             </div>
             <div id="graphpart" style="text-align: center;" class="ui-widget-header ui-corner-all";>
-              <input type="radio" id="pagerank" name="radio" checked="checked"><label for="pagerank">PageRank</label>
-              <input type="radio" id="betweenness" name="radio" ><label for="betweenness">Betweeness</label>
-              <input type="radio" id="closeness" name="radio" ><label for="closeness">Closeness</label>
-              <input type="radio" id="degree" name="radio" ><label for="degree">Degree</label>
+              <input type="radio" id="nlradio1" value="pagerank" name="nlradio" checked="checked"><label for="nlradio1">PageRank</label>
+              <input type="radio" id="nlradio2" value="betweenness" name="nlradio" ><label for="nlradio2">Betweeness</label>
+              <input type="radio" id="nlradio3" value="closeness" name="nlradio" ><label for="nlradio3">Closeness</label>
+              <!-- <input type="radio" id="degree" name="radio" ><label for="degree">Degree</label>-->
             </div>
-            <div id = "graphvisdiv" style="border: 1px solid rgb(128, 158, 196); border-top: 0px;"></div>
+            <div id = "graphvisdiv" style=" border-top: 0px;"></div> <!--border: 1px solid rgb(128, 158, 196);-->
           </div>
         </div>
-        <div class='buttomLeft'>Line vis goes here</div>
+        <div class='buttomLeft'>
+          <div id="lineControl" style="text-align: center;" class="ui-widget-header ui-corner-all";>
+              <input type="radio" id="lradio1" value="pagerank" name="lradio" checked="checked"><label for="lradio1">PageRank</label>
+              <input type="radio" id="lradio2" value="betweenness" name="lradio" ><label for="lradio2">Betweeness</label>
+              <input type="radio" id="lradio3" value="closeness" name="lradio" ><label for="lradio3">Closeness</label>
+              <input type="radio" id="lradio4" value="averageSpeed" name="lradio" ><label for="lradio4">AvgSpeed</label>
+              <input type="radio" id="lradio5" value="travelTime" name="lradio" ><label for="lradio5">TravelTime</label>
+              <input type="radio" id="lradio6" value="flow" name="lradio" ><label for="lradio6">Flow</label>
+          </div>
+          <svg id = 'multiline'></svg>
+        </div>
       </div>
       <div id="basicMap" class="content"></div>
     </div> 
+
+    
+
    </body>
 </html>
