@@ -4,9 +4,14 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+<<<<<<< HEAD
 // 3/17/2015
 
 1. Add a muli-line graph for time series
+=======
+// 3/16/2015
+Separate Rosechart stroke seeting from definition and configure it in setting.js
+>>>>>>> origin/master
 
 
 // 3/13/2015

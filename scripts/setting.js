@@ -35,4 +35,5 @@ var roseSettings = {
 	, innersize: 10
 	, rosesize: 30
 	, labelpad: 5
+	, arcstroke: 'black'
 }
