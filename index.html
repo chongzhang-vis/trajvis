@@ -42,20 +42,57 @@
           </div>
         </div>
         <div class='buttomLeft'>
-          <div id="lineControl" style="text-align: center;" class="ui-widget-header ui-corner-all";>
-              <input type="radio" id="lradio1" value="pagerank" name="lradio" checked="checked"><label for="lradio1">PageRank</label>
-              <input type="radio" id="lradio2" value="betweenness" name="lradio" ><label for="lradio2">Betweeness</label>
-              <input type="radio" id="lradio3" value="closeness" name="lradio" ><label for="lradio3">Closeness</label>
-              <input type="radio" id="lradio4" value="averageSpeed" name="lradio" ><label for="lradio4">AvgSpeed</label>
-              <input type="radio" id="lradio5" value="travelTime" name="lradio" ><label for="lradio5">TravelTime</label>
-              <input type="radio" id="lradio6" value="flow" name="lradio" ><label for="lradio6">Flow</label>
+          <div id='groupselect' style="text-align: center;" >
+            <label for="lineSelect">Line chart:</label>
+            <select id="lineSelect" >
+                <option value="pagerank" >Pagerank</option>
+                <option value="betweenness" >Betweeness</option>
+                <option value="closeness" >Closeness</option>
+                <option value="averageSpeed" >AvgSpeed</option>
+                <option value="travelTime" >TravelTime</option>
+                <option value="flow">Flow</option>
+            </select>
+            <label for="roseSelect">Rose chart:</label>
+            <select id="roseSelect" >
+                <option value="pagerank" >Pagerank</option>
+                <option value="betweenness" >Betweeness</option>
+                <option value="closeness" >Closeness</option>
+                <option value="averageSpeed" >AvgSpeed</option>
+                <option value="travelTime" >TravelTime</option>
+                <option value="flow">Flow</option>
+            </select>
+            <label for="roadSelect">Road network:</label>
+            <select id="roadSelect" >
+                <option value="pagerank" >Pagerank</option>
+                <option value="betweenness" >Betweeness</option>
+                <option value="closeness" >Closeness</option>
+                <option value="averageSpeed" >AvgSpeed</option>
+                <option value="travelTime" >TravelTime</option>
+                <option value="flow">Flow</option>
+            </select>
           </div>
           <svg id = 'multiline'></svg>
         </div>
       </div>
       <div id="basicMap" class="content"></div>
     </div> 
-
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+    var sc_project=10227952; 
+    var sc_invisible=1; 
+    var sc_security="19025bec"; 
+    var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="web analytics"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="http://c.statcounter.com/10227952/0/19025bec/1/"
+    alt="web analytics"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide -->
     
 
    </body>
