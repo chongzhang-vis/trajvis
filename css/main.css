@@ -15,31 +15,35 @@ html, body {
     top: 0px;
     left: 0px;
     bottom: 0px;    
-    width: 40%;
+    width: 42%;
+
+    border-right: rgb(128, 158, 196);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .topLeft {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 70%; 
+    height: 50%; 
     width: 100%;      
 }
 
 .buttomLeft {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 0px;
     bottom: 0px;
-    height: 30%;  
+    height: 50%;  
     width: 100%;      
 }
 
 .content {
     position: absolute;
     top: 0px;
-    left: 40%;
-    width: 60%;
+    left: 42%;
+    width: 58%;
     right: 0px;
     bottom: 0px;        
 }
@@ -54,7 +58,7 @@ html, body {
 	}
 	
 .graph .route .rosearcs path {
-	stroke: #DCDADA;	
+	stroke: #fff;	
 	stroke-width: 1px
 }
 .label .node, .label text{

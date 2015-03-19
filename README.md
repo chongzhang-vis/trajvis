@@ -4,6 +4,22 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+// TODO
+
+1. Road network color setting as the combination of nodelink radio buttions and time list
+
+// 3/18/2015
+
+1. Made rosechart arcs readable when clicking
+2. Round rosechar tooltip to 4 decimal place
+3. Fixed rosechar arc radius scale
+4. Added time select tag holding timeticks from 0 - 12 whichi will affect nodelink, rose, and road
+5. Aggregated partition flow, speed, and traveltime for allday prop
+6. Added traffic info to the nodelink graph radio buttons
+7. Broaden line on the linechart when mouse over it
+8. Fixed linechart select tag bug. It will not affected by the select tag on the nodelink graph
+9. Foxed x axis label position on the linechart
+
 // 3/17/2015
 
 1. Add a muli-line graph for time series
