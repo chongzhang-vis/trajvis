@@ -4,9 +4,11 @@ Chong Zhang
 
 Trajectory Data Visualization
 
-// TODO
+// 3/19/2015
 
-1. Road network color setting as the combination of nodelink radio buttions and time list
+1. Road network color mapping as time specified
+2. Rosechart tooltip bug
+
 
 // 3/18/2015
 

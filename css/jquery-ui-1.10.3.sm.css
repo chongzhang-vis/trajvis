@@ -435,7 +435,7 @@ body .ui-tooltip {
 	border: 1px solid #809EC4;
 	background: rgba(128, 158, 196, 0.53);
 	color: #222222;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 .ui-widget-header a {

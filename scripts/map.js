@@ -85,8 +85,7 @@ OpenLayers.Renderer.Smart = OpenLayers.Class(OpenLayers.Renderer.SVG, {
 
 
 // ----------------------------------------------------------------------
-function init() 
-{
+function init() {
    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    // Create the basic map.  Everything gets added to this.
    map = new OpenLayers.Map("basicMap", {
@@ -180,7 +179,7 @@ function init()
   */
   routesVector_layer = new OpenLayers.Layer.Vector("Trajectory", {
     //style: routesStyle,
-    styleMap: getStyleMap('pagerank'),
+    styleMap: getStyleMap('pagerank', 'allday'),
     strategies: [ filterStrategy ],
     renderers: ["Canvas"]
   });
@@ -204,9 +203,14 @@ function init()
     }
   });
   $('#graphpart' ).buttonset(); 
+  
+
+  // reset map
   $( "input[type=submit]" )
       .button()
-      .click(function( event ) {                
+      .click(function( event ) {
+      
+      d3.selectAll('.rosearcs path').style("fill", function(da){ return d3.select(this).attr('fillcolor')});    //'#E5E5E5'
         d3.selectAll('.roseg').style('display', null);
         filterStrategy.setFilter();
       });
