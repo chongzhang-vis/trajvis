@@ -37,3 +37,9 @@ var roseSettings = {
 	, labelpad: 5
 	, arcstroke: 'black'
 }
+
+var trafficColor = {
+	  flow: [0, 200, 400] //0 200 400
+	, speed: [80, 20, 0] //80 20 0
+	, travelTime: [0, 1, 2] //0 2.5 5
+}
