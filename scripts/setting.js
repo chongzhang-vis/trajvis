@@ -23,7 +23,7 @@ MapColor and RoseChart settings
 */
 var colorSettings = {
 	  groupLinksStroke: '#7fc97f' // kinda Green
-	, nodeStrokeRange:  ["#00f", "#ff0", "#f00"] //["#1a9641", "#2c7bb6", "#d7191c"]
+	, nodeStrokeRange:  ["#3288bd", "#e6f598", "#f00"] // blue, yellow, red //"#00f", "#ff0", "#f00"
 	, routeStroke: 'rgba(238, 153, 0, 0.5)' // kinda Yellow 
 	, roseArcFill: "#58e" // kinda Blue
 };
@@ -36,10 +36,26 @@ var roseSettings = {
 	, rosesize: 30
 	, labelpad: 5
 	, arcstroke: 'black'
-}
+};
 
 var trafficColor = {
 	  flow: [0, 200, 400] //0 200 400
 	, speed: [80, 20, 0] //80 20 0
 	, travelTime: [0, 1, 2] //0 2.5 5
+};
+
+var nodelinkgraph = {
+	  nodeshadow: 12
+	, textfontsize: 12
+	, outline_rect_w: 16
+	, outline_rect_h: 16
+}
+
+// only used for allday.html
+var roadnetwork = {
+	  colorRange:  ["#3288bd", "#e6f598", "#f00"] // blue, yellow, red
+	, pagerank: [0, .000015, .0109]
+	, betweenness: [0, .0001, .013784]
+	, closeness: [0, .001, .004123]
+	
 }
