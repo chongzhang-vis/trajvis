@@ -4,6 +4,12 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+// 3/22/2015
+
+1. add allday.html
+2. separate node size setting from code
+3. adjust color coding
+
 // 3/19/2015
 
 1. Road network color mapping as time specified
