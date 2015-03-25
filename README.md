@@ -4,11 +4,16 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+// 3/24/2015
+
+add force to prevent overlap on node
+
 // 3/22/2015
 
 1. add allday.html
 2. separate node size setting from code
 3. adjust color coding
+
 
 // 3/19/2015
 
