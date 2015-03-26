@@ -53,9 +53,9 @@ var nodelinkgraph = {
 
 // only used for allday.html
 var roadnetwork = {
-	  colorRange:  ["#3288bd", "#e6f598", "#f00"] // blue, yellow, red
-	, pagerank: [0, .000015, .0109]
-	, betweenness: [0, .0001, .013784]
-	, closeness: [0, .001, .004123]
+	  colorRange:  ["#3288bd", "#e6f598", "#ff0000"] // blue, yellow, red
+	, pagerank: [0, .00005, .0002]
+	, betweenness: [0, .00005, .0007]
+	, closeness: [0, .04, .08]
 	
 }

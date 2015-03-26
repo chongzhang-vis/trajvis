@@ -4,6 +4,10 @@ Chong Zhang
 
 Trajectory Data Visualization
 
+// 3/26/2015
+
+adjusted color
+
 // 3/24/2015
 
 add force to prevent overlap on node

@@ -177,7 +177,8 @@ function init() {
   };
   var routeSM = new OpenLayers.StyleMap(new OpenLayers.Style(routesStyle, { context: ol_context }) ); 
   */
-  makeSepGraph("graphvisdiv");
+  //makeSepGraph("graphvisdiv");
+  makeConstraintGraph("graphvisdiv");
   
   routesVector_layer = new OpenLayers.Layer.Vector("Trajectory", {
     //style: routesStyle,
